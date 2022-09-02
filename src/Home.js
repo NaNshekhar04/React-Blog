@@ -1,37 +1,43 @@
 import { useState, useEffect } from "react";
 import BlogList from "./BlogList";
+import useFetch from "./useFetch";
 
 const Home = () => {
 
-    const [blogs, setBlogs] = useState(null);
-    const [isPending, setisPending] = useState(true);
-    const [error, setError] = useState(null);
+    const {data, isPending, error} = useFetch('http://localhost:8000/blogs')  //APPLYING THE CUSTOM HOOK!
 
-    useEffect(()=>{
-        setTimeout(()=>{
-            fetch('http://localhost:8000/blogs')
-        .then (res =>{
-                if(!res.ok){
-                    throw Error('Unable to fetch...😭 Internal server error.....');
-                }
-            return res.json();
-        })
-        .then(data=>{
-            setBlogs(data);
-            setisPending(false);
-            setError(null);
-        })
-            .catch(err=>{
-                setisPending(false);
-               setError(err.message);
-            })
-        }, 1000);   
-    }, []);
+
+
+    //BEFORE MAKING A CUSTOM HOOKS!
+    // const [blogs, setBlogs] = useState(null);     //Setting state for our blog!
+    // const [isPending, setisPending] = useState(true);       //Setting state for our blog while Loading!
+    // const [error, setError] = useState(null);           //Setting state for our Error Handling!
+
+    // useEffect(()=>{
+    //     setTimeout(()=>{
+    //         fetch('http://localhost:8000/blogs')
+    //     .then (res =>{
+    //             if(!res.ok){
+    //                 throw Error('Unable to fetch...😭 Internal server error.....');
+    //             }
+    //         return res.json();
+    //     })
+    //     .then(data=>{
+    //         setBlogs(data);
+    //         setisPending(false);
+    //         setError(null);         //If got data successfully don't try to set the error!
+    //     })
+    //         .catch(err=>{
+    //             setisPending(false);    //If got an error make the loading state to be false
+    //            setError(err.message);      //Else change the state of the error with error message!
+    //         })
+    //     }, 1000);   
+    // }, []);
     return ( 
         <div className="Home">
             {error && <div>{error}</div>}
             {isPending && <div>Loading.....</div> }
-            {blogs && <BlogList blogs= {blogs} title= "All Blogs!"/>}
+            {data && <BlogList blogs= {data} title= "All Blogs!"/>}
         </div>
 
      );
