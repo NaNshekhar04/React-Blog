@@ -1,16 +1,34 @@
 {
     "blogs": [
         {
-            "title": "My new website",
+            "title": "My new website!",
             "body": "lorem ipsum",
-            "author": "mario",
+            "author": "Shekhar",
             "id": 1
         },
         {
-            "title": "My new website",
+            "title": "Learn about React.",
+            "body": "lorem ipsum",
+            "author": "Shaun",
+            "id": 2
+        },
+        {
+            "title": "Closures Explained in 5 Minutes!!",
             "body": "lorem ipsum",
             "author": "mario",
-            "id": 2
+            "id": 3
+        },
+        {
+            "title": "Is DSA important??",
+            "body": "lorem ipsum",
+            "author": "Michael Tim",
+            "id": 4
+        },
+        {
+            "title": "All about Open source/",
+            "body": "lorem ipsum",
+            "author": "Eddie Jaoude",
+            "id": 5
         }
     ]
 }

@@ -8,8 +8,10 @@ const useFetch = (url) =>{
     const [error, setError] = useState(null);           //Setting state for our Error Handling!
 
     useEffect(()=>{
+        const abortCont = new AbortController();
+        
         setTimeout(()=>{
-            fetch(url)
+            fetch(url, {signal:abortCont.signal})
         .then (res =>{
                 if(!res.ok){
                     throw Error('Unable to fetch...😭 Internal server error.....');
@@ -22,11 +24,17 @@ const useFetch = (url) =>{
             setError(null);         //If got data successfully don't try to set the error!
         })
             .catch(err=>{
+                if(err.name==='AbortError'){
+                    console.log('Fetch Aborted');
+                }else{
                 setisPending(false);    //If got an error make the loading state to be false
                setError(err.message);      //Else change the state of the error with error message!
+                }
             })
         }, 1000);   
+        return () => abortCont.abort();
     }, [url]);
+
     return { data, isPending, error }
 }
 
