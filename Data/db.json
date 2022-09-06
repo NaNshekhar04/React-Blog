@@ -1,34 +1,40 @@
 {
-    "blogs": [
-        {
-            "title": "My new website!",
-            "body": "lorem ipsum",
-            "author": "Shekhar",
-            "id": 1
-        },
-        {
-            "title": "Learn about React.",
-            "body": "lorem ipsum", 
-            "author": "Shaun",
-            "id": 2
-        },
-        {
-            "title": "Closures Explained in 5 Minutes!!",
-            "body": "lorem ipsum",
-            "author": "mario",
-            "id": 3
-        },
-        {
-            "title": "Is DSA important??",
-            "body": "lorem ipsum",
-            "author": "Michael Tim",
-            "id": 4
-        },
-        {
-            "title": "All about Open source/",
-            "body": "lorem ipsum",
-            "author": "Eddie Jaoude",
-            "id": 5
-        }
-    ]
+  "blogs": [
+    {
+      "title": "Learn about React.",
+      "body": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)",
+      "author": "Shaun",
+      "id": 2
+    },
+    {
+      "title": "Closures Explained in 5 Minutes!!",
+      "body": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+      "author": "mario",
+      "id": 3
+    },
+    {
+      "title": "Is DSA important??",
+      "body": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.",
+      "author": "Michael Tim",
+      "id": 4
+    },
+    {
+      "title": "All about Open source/",
+      "body": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure.",
+      "author": "Eddie Jaoude",
+      "id": 5
+    },
+    {
+      "title": "Redux in 100 seconds!!",
+      "body": "Redux maintainer Mark Erikson appeared on the \"Learn with Jason\" show to explain how we recommend using Redux today. The show includes a live-coded example app that shows how to use Redux Toolkit and React-Redux hooks with Typescript, as well as the new RTK Query data fetching APIs.\n\n",
+      "author": "shekhar",
+      "id": 6
+    },
+    {
+      "title": "5 most Important JS Array methods",
+      "body": "Array.prototype.at()\nReturns the array item at the given index. Accepts negative integers, which count back from the last item.\n\nArray.prototype.concat()\nReturns a new array that is the calling array joined with other array(s) and/or value(s).\n\nArray.prototype.copyWithin()\nCopies a sequence of array elements within an array.\n\nArray.prototype.entries()\nReturns a new array iterator object that contains the key/value pairs for each index in an array.\n\nArray.prototype.every()\nReturns true if every element in the calling array satisfies the testing function.\n\nArray.prototype.fill()\nFills all the elements of an array from a start index to an end index with a static value.\n\nArray.prototype.filter()\nReturns a new array containing all elements of the calling array for which the provided filtering function returns true.\n\nArray.prototype.find()\nReturns the value of the first element in the array that satisfies the provided testing function, or undefined if no appropriate element is found.\n\nArray.prototype.findIndex()\nReturns the index of the first element in the array that satisfies the provided testing function, or -1 if no appropriate element was found.\n\nArray.prototype.findLast()\nReturns the value of the last element in the array that satisfies the provided testing function, or undefined if no appropriate element is found.\n\nArray.prototype.findLastIndex()\nReturns the index of the last element in the array that satisfies the provided testing function, or -1 if no appropriate element was found.\n\nArray.prototype.flat()\nReturns a new array with all sub-array elements concatenated into it recursively up to the specified depth.\n\nArray.prototype.flatMap()\nReturns a new array formed by applying a given callback function to each element of the calling array, and then flattening the result by one level.\n\nArray.prototype.forEach()\nCalls a function for each element in the calling array.\n\nArray.prototype.group() Experimental\nGroups the elements of an array into an object according to the strings returned by a test function.\n\nArray.prototype.groupToMap() Experimental\nGroups the elements of an array into a Map according to values returned by a test function.\n\nArray.prototype.includes()\nDetermines whether the calling array contains a value, returning true or false as appropriate.\n\nArray.prototype.indexOf()\nReturns the first (least) index at which a given element can be found in the calling array.\n\nArray.prototype.join()\nJoins all elements of an array into a string.\n\nArray.prototype.keys()\nReturns a new array iterator that contains the keys for each index in the calling array.\n\nArray.prototype.lastIndexOf()\nReturns the last (greatest) index at which a given element can be found in the calling array, or -1 if none is found.\n\nArray.prototype.map()\nReturns a new array containing the results of invoking a function on every element in the calling array.\n\nArray.prototype.pop()\nRemoves the last element from an array and returns that element.\n\nArray.prototype.push()\nAdds one or more elements to the end of an array, and returns the new length of the array.\n\nArray.prototype.reduce()\nExecutes a user-supplied \"reducer\" callback function on each element of the array (from left to right), to reduce it to a single value.\n\nArray.prototype.reduceRight()\nExecutes a user-supplied \"reducer\" callback function on each element of the array (from right to left), to reduce it to a single value.\n\nArray.prototype.reverse()\nReverses the order of the elements of an array in place. (First becomes the last, last becomes first.)\n\nArray.prototype.shift()\nRemoves the first element from an array and returns that element.\n\nArray.prototype.slice()\nExtracts a section of the calling array and returns a new array.\n\nArray.prototype.some()\nReturns true if at least one element in the calling array satisfies the provided testing function.\n\nArray.prototype.sort()\nSorts the elements of an array in place and returns the array.\n\nArray.prototype.splice()\nAdds and/or removes elements from an array.\n\nArray.prototype.toLocaleString()\nReturns a localized string representing the calling array and its elements. Overrides the Object.prototype.toLocaleString() method.\n\nArray.prototype.toString()\nReturns a string representing the calling array and its elements. Overrides the Object.prototype.toString() method.\n\nArray.prototype.unshift()\nAdds one or more elements to the front of an array, and returns the new length of the array.\n\nArray.prototype.values()\nReturns a new array iterator object that contains the values for each index in the array.\n\nArray.prototype[@@iterator]()\nReturns the values() function by default.",
+      "author": "",
+      "id": 7
+    }
+  ]
 }
